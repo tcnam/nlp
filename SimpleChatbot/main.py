@@ -33,3 +33,6 @@ for intent in data['intents']:
     if intent['tag'] not in labels:
         labels.append(intent['tag'])
 
+stemmer=LancasterStemmer()
+words=[stemmer.stem(w.low)]
+
